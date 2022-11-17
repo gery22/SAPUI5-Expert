@@ -1,0 +1,64 @@
+new Text({text: "str"}   ------- 
+.placeAt("id");
+XMLView.create({}).then(function)
+MessageToast.show("msg")
+getResourceBundle()
+
+
+pasos para crear el proyecto:
+
+1- new project from templates MTA  - invoices   (WHY MTA?)
+2- crear module approuter (left click on mta.yml)  (WHY APPROUTER?)
+3- find command > create project from templates   (it will find the app router and set up)4- manifest.json con be edited it contains app settings
+4- DELETE ALL FOLDERS from webapp to manifest
+5- create index.html and bootstrao it (configure the SAPIU5 library   data-sap-ui-oninit="module:gerydtp/SAPUI5/index" )
+6- create index.js   
+
+sap.ui.define([ "rutas/hasta/llegar/al/elemento], function (Elemento) {code});
+
+en el array se pasan las rutas de la library
+ie ["sap/m/Text"] 
+
+/**
+  * @param {typeof sap.m.text}  Text   is param a DECORATOR??  que hace esto??
+     */
+
+  function (ELEMENT)
+
+en index crear un body con id 'content'
+
+
+7- Use strict (modo estricto para js)
+8- crea flder view>Appview.xml
+
+<mvc:View>    indica que se trata de una vista
+xmlns ="sap.library"  namespace
+
+Conclusion Index.js la primera funcion instancia una vista y luego la posiciona en el content del index.html 
+con la propiedad viewName le indicamos la ruta de la vista a insertar (view.App)
+
+9 -----App.view.xml
+
+al instanciar la vista se intancia el conrolador
+cada funcion() .onFunction de la vista (boton, etc) tiene su codigo en el controlador
+
+
+10 ----- crea App.controller.js
+
+copia y pega de index.js y esta vez en lugar de instanciar la vista, instancia un controlador
+
+
+
+AMD  asincroni modue definitom
+
+11 crea el componente
+
+12 actualiza metada en component.js  
+
+13  crea contenedor de componente en index.js
+
+pasa la metadata al manifest
+
+en index.html cambia que en init vaya a data-sap-ui-oninit="module:sap/ui/core/ComponentSupport" y asi ya no necesitamos index.js
+
+14 git
