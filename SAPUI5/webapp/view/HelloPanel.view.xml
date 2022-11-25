@@ -1,0 +1,23 @@
+<mvc:View controllerName="gerydtp.SAPUI5.controller.HelloPanel"
+          xmlns="sap.m" 
+          xmlns:mvc="sap.ui.core.mvc" 
+          xmlns:core="sap.ui.core"
+          displayBlock="true">
+    <Panel headerText="{i18n>helloPanel}"
+           class="sapUiResponsiveMargin"
+           width="auto">
+        <content>
+                <Button icon="sap-icon://physical-activity" 
+                        text="{i18n>showHelloDialogBut}" 
+                        press=".onOpenDialog" />
+                <Button text="{i18n>showHelloButtonTex}" press=".onShowHello" />
+                <Input value="{/recipient/name}" 
+                       valueLiveUpdate="true" 
+                       width="60%" />
+                <Text text="Hello {/recipient/name}"
+                      class="sapUiSmallMargin boldElements sapThemeHighlight-asColor">
+                </Text>
+        </content>
+    </Panel>
+    <core:Fragment fragmentName="gerydtp.SAPUI5.view.Form01" type="XML"/>
+</mvc:View>

@@ -62,3 +62,29 @@ pasa la metadata al manifest
 en index.html cambia que en init vaya a data-sap-ui-oninit="module:sap/ui/core/ComponentSupport" y asi ya no necesitamos index.js
 
 14 git
+
+15 styles
+
+16- paraanidar visats, creamos la vista nueva, con su controlador, y en la vista principa agregamos un elemento tipo
+ <mvc:XMLView viewName="gerydtp.SAPUI5.view.HelloPanel"/>
+
+ 7.2 Fragmentos - sirven para reutilizar codigo sn necesiadd de crear un nuevo controlador  
+
+ crear file  Form01.fragment.xml
+ agrgar libreria xlm:core en la vist en que se quiere utilizar el fragment y para utilizarlo se pone 
+  <core:Fragment fragmentName="gerydtp.SAPUI5.view.Form01" type="XML"/>
+  la logica del form, la decide el controlador de la visat en que se utiliza cada instancia del form
+
+7.3 dialogs
+
+creamos un fragmento para añadir el dialogo
+el elemento se disparara desde el controllador por la tanto la libreria se declara en el controlador de la vsiat donde se usa el boton del dialogo
+
+managed Object: para quitar el controlador del dialogo de la vist, creamos una esspecie de "onrollador (managed object) que cntrolla al dialogo y se puede llamr desxe cualquier vista (helloDialog.js)
+
+7.7   para poder llamar al dialog.js tiene que ser visible desde toda las vistas, esto se hace dese el component.js
+
+8.1  Binding path
+ creamos Invoices.json (en folder webapp)
+ avisamos al manifest que hay un model 
+ creamos una nieva vista (invoices.view.xml)
