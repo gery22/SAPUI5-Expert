@@ -16,7 +16,7 @@
       "toolsId": "02df60a6-e620-4cf6-a1de-80fb0e5d016e"
     },
     "dataSources": {
-      "mainService": {
+      "mainService1": {
         "uri": "/sap/opu/odata/",
         "type": "OData",
         "settings": {
@@ -25,8 +25,8 @@
           "odataVersion": "2.0"
         }
       },
-      "Northwind.svc": {
-        "uri": "Northwind/V2/Northwind/Northwind.svc/",
+      "mainService": {
+        "uri": "/V2/Northwind/Northwind.svc/",
         "type": "OData",
         "settings": {
           "odataVersion": "2.0",
@@ -81,8 +81,8 @@
         "type": "sap.ui.model.json.JSONModel",
         "uri": "Invoices.json"
       },
-      "": {
-        "dataSource": "Northwind.svc",
+      "northwind": {
+        "dataSource": "mainService",
         "preload": true,
         "settings": {
           "defaultBindingMode": "TwoWay",
