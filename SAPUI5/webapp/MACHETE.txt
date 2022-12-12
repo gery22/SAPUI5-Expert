@@ -87,4 +87,4 @@ managed Object: para quitar el controlador del dialogo de la vist, creamos una e
 8.1  Binding path
  creamos Invoices.json (en folder webapp)
  avisamos al manifest que hay un model 
- creamos una nieva vista (invoices.view.xml)
+ creamos una nieva vista (InvoicesList.view.xml) y la insertams en Appview

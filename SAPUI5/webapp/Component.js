@@ -1,3 +1,5 @@
+
+// @ts-nocheck
 sap.ui.define([
     "sap/ui/core/UIComponent",
     "gerydtp/SAPUI5/model/Models",
@@ -6,7 +8,6 @@ sap.ui.define([
 ],
 /**
  * @param {typeof sap.ui.core.UIComponent} UIComponent
- * @param {typeof gerydtp.SAPUI5.model.Models} Models
  * @param {typeof sap.ui.model.resource.ResourceModel} ResourceModel  
  */ 
 
@@ -16,14 +17,6 @@ function(UIComponent, Models, ResourceModel, HelloDialog) {
 
         metadata: {
             manifest : "json"
-            // "rootView": {
-                
-                // "viewName": "gerydtp.SAPUI5.view.App",
-                // "type": "XML",
-                // "async": true,
-                // "id": "app"
-
-            
         },
 
         init : function() {

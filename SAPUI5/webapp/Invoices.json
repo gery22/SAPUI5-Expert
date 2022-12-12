@@ -1,53 +1,44 @@
 {
-    "resourceType": "Invoice",
-    "id": "example",
-    "text": {
-      "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Example of Invoice</div>"
-    },
-    "identifier": [
+    "Invoices": [
       {
-        "system": "http://myHospital.org/Invoices",
-        "value": "654321"
-      }
-    ],
-    "status": "issued",
-    "subject": {
-      "reference": "Patient/example"
-    },
-    "creation": "2017-01-25T08:00:00+01:00",
-    "periodDate": "2017-01-25",
-    "participant": [
+        "ProductName": "HDD-Samsung 250Gb",
+        "Quantity": 21,
+        "ExtendedPrice": 87.2000,
+        "ShipperName": "Fun Inc.",
+        "ShippedDate": "2015-04-01T00:00:00",
+        "Status": "A"
+      },
       {
-        "role": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "17561000",
-              "display": "Cardiologist"
-            }
-          ]
-        },
-        "actor": {
-          "reference": "Practitioner/example"
-        }
+        "ProductName": "Display Dell UH850 4K 27",
+        "Quantity": 4,
+        "ExtendedPrice": 9.99999,
+        "ShipperName": "ACME",
+        "ShippedDate": "2015-02-18T00:00:00",
+        "Status": "B"
+      },
+      {
+        "ProductName": "RAM PX DDR4 PC4-24000 16GB",
+        "Quantity": 3,
+        "ExtendedPrice": 6.85000,
+        "ShipperName": "ACME",
+        "ShippedDate": "2015-03-02T00:00:00",
+        "Status": "B"
+      },
+      {
+        "ProductName": "Intel Core i7-9700K 3.6Ghz",
+        "Quantity": 2,
+        "ExtendedPrice": 8.8000,
+        "ShipperName": "ACME",
+        "ShippedDate": "2015-04-12T00:00:00",
+        "Status": "C"
+      },
+      {
+        "ProductName": "AMD Radeon RX580 8GB GDDR5",
+        "Quantity": 1,
+        "ExtendedPrice": 2.71212,
+        "ShipperName": "Fun Inc.",
+        "ShippedDate": "2015-01-27T00:00:00",
+        "Status": "A"
       }
-    ],
-    "issuer": {
-      "identifier": {
-        "system": "http://myhospital/NamingSystem/departments",
-        "value": "CARD_INTERMEDIATE_CARE"
-      }
-    },
-    "account": {
-      "reference": "Account/example"
-    },
-    "totalNet": {
-      "value": 40,
-      "currency": "EUR"
-    },
-    "totalGross": {
-      "value": 48,
-      "currency": "EUR"
-    }
+    ]
   }
